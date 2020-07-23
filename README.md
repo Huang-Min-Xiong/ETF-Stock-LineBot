@@ -14,6 +14,9 @@
 #### 透過os套件來實作功能
 - port = int(os.environ.get('PORT',5000)): 綁定端口為5000
 
+#### 透過ngrok來測試
+- ngrok http 5000
+
 #### 程式說明
 使用Python語言撰寫股票爬蟲程式來製作LineBot，以Flask框架+ngrok來做部屬，
 
