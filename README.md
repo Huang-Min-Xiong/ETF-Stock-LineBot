@@ -14,11 +14,17 @@
 #### 透過os套件來實作功能
 - port = int(os.environ.get('PORT',5000)): 綁定端口為5000
 
+#### 透過Heroku來部署
+所需文件: 
+- Procfile: 如何運行Web App，在這邊我們使用gunicorn這個WSGI Server。
+- runtime.txt: 使用的Python 版本
+- requirements.txt: Python 套件清單，告訴Heroku需要安裝哪些套件
+
 #### 透過ngrok來測試
 - ngrok http 5000
 
 #### 程式說明
-使用Python語言撰寫股票爬蟲程式來製作LineBot，以Flask框架+ngrok來實作
+使用Python語言撰寫股票爬蟲程式來製作LineBot，以Flask框架+ Heroku來部署
 
 透過使用者輸入"股票代號"來查看該股票資訊: 開盤、收盤、最高、最低...等
 
